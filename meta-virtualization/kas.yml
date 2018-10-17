@@ -1,0 +1,23 @@
+header:
+  version: 2
+  includes:
+    - file: meta-iot2000-example/kas.yml
+      repo: meta-iot2000
+
+repos:
+  meta-virtualization:
+
+  meta-iot2000:
+    url: https://github.com/siemens/meta-iot2000
+    refspec: master
+
+  meta-openembedded:
+    layers:
+      meta-oe:
+      meta-python:
+      meta-networking:
+      meta-filesystems:
+
+local_conf_header:
+  meta-custom: |
+    IMAGE_INSTALL_append = " docker docker-contrib connman connman-client"
