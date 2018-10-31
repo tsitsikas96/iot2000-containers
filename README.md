@@ -1,4 +1,4 @@
-# meta-iot2000-containers
+# iot2000-containers
 Containers integration for IOT2000
 
 To run the build open terminal and write the following:
