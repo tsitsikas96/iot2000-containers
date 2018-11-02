@@ -6,6 +6,8 @@ header:
 
 repos:
   meta-virtualization:
+    layers:
+      ./iot2000-containers/meta-virtualization:
 
   meta-iot2000:
     url: https://github.com/siemens/meta-iot2000
@@ -20,4 +22,4 @@ repos:
 
 local_conf_header:
   meta-custom: |
-    IMAGE_INSTALL_append = " docker docker-contrib connman connman-client"
+    IMAGE_INSTALL_append = " lxc"
