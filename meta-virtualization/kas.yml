@@ -5,9 +5,7 @@ header:
       repo: meta-iot2000
 
 repos:
-  meta-virtualization:
-    layers:
-      ./iot2000-containers/meta-virtualization:
+  ./iot2000-containers/meta-virtualization:
 
   meta-iot2000:
     url: https://github.com/siemens/meta-iot2000
