@@ -1,6 +1,8 @@
 # iot2000-containers
 Containers integration for IOT2000
 
+Move meta-virtualization folder outside of iot2000-containers folder
+
 To run the build open terminal and write the following:
 docker run -v $(pwd):/shared-volume:rw -e USER_ID=$(id -u) -it kasproject/kas:latest
 
