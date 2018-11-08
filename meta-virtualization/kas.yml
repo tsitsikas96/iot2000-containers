@@ -20,4 +20,5 @@ repos:
 
 local_conf_header:
   meta-custom: |
+    DISTRO_FEATURES_append = " virtualization"
     IMAGE_INSTALL_append = " lxc"
