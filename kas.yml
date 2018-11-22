@@ -6,10 +6,12 @@ header:
 
 repos:
   meta-virtualization:
+    url: https://git.yoctoproject.org/git/meta-virtualization
+    refspec: 1beb18840539f0366b6a5f20bcff98c99534c496
 
   meta-iot2000:
     url: https://github.com/siemens/meta-iot2000
-    refspec: master
+    refspec: dac35721822fb3649406602239f42c7853cdbb40
 
   meta-openembedded:
     layers:
@@ -19,6 +21,6 @@ repos:
       meta-filesystems:
 
 local_conf_header:
-  meta-custom: |
+  lxc: |
     DISTRO_FEATURES_append = " virtualization"
     IMAGE_INSTALL_append = " lxc"
