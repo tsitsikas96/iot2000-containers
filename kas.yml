@@ -21,6 +21,9 @@ repos:
       meta-filesystems:
 
 local_conf_header:
-  meta-custom: |
+  lxc: |
     DISTRO_FEATURES_append = " virtualization"
     IMAGE_INSTALL_append = " lxc"
+    DISTRO_FEATURES_append = " systemd"
+    VIRTUAL-RUNTIME_init_manager = "systemd"
+    VIRTUAL-RUNTIME_initscripts = ""
