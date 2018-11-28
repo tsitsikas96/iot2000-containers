@@ -7,7 +7,7 @@ header:
 repos:
   meta-virtualization:
     url: https://git.yoctoproject.org/git/meta-virtualization
-    refspec: 1beb18840539f0366b6a5f20bcff98c99534c496
+    refspec: morty
 
   meta-iot2000:
     url: https://github.com/siemens/meta-iot2000
