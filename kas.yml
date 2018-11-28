@@ -23,4 +23,4 @@ repos:
 local_conf_header:
   lxc: |
     DISTRO_FEATURES_append = " virtualization"
-    IMAGE_INSTALL_append = " lxc"
+    IMAGE_INSTALL_append = " lxc cgroup-lite docker containerd runc"
